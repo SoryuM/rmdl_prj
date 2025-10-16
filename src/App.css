@@ -1,42 +1,226 @@
-#root {
-  max-width: 1280px;
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f6fa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 20px;
+}
+
+.slider {
+  background: #e1e4eb;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #555;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.featured {
+  background: #fff;
+  flex: 0.8;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.featured img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.featured h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.featured .price {
+  font-weight: bold;
+  color: #007bff;
+  margin: 5px 0;
 }
 
-.card {
-  padding: 2em;
+.stars {
+  color: #f5b50a;
+  font-size: 18px;
 }
 
-.read-the-docs {
-  color: #888;
+/* Product List */
+.product-list {
+  flex: 2;
 }
+
+.product-list h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.product-items {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background: #fff;
+  width: 150px;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+}
+
+.product-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.product-card h3 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.product-card .price {
+  color: #007bff;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.quantity-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.quantity-control button {
+  background: #007bff;
+  border: none;
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.quantity-control button:hover {
+  background: #0056b3;
+}
+
+.quantity-control span {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.cart-summary {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cart-summary h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.cart-summary p {
+  font-size: 16px;
+  color: #555;
+  margin: 8px 0;
+}
+
+.purchase-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s ease;
+}
+
+.purchase-btn:hover {
+  background: #218838;
+}
+
+.purchase-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.cart-summary {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cart-summary h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.cart-summary p {
+  font-size: 16px;
+  color: #555;
+  margin: 8px 0;
+}
+
+.purchase-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s ease;
+}
+
+.purchase-btn:hover {
+  background: #218838;
+}
+
+.purchase-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
