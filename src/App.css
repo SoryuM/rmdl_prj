@@ -224,3 +224,154 @@ body {
   cursor: not-allowed;
 }
 
+desc {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.stock {
+  color: #007b00;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+
+.cart-summary {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary h2 {
+  margin-bottom: 15px;
+  text-align: left;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background: #f0f0f0;
+  font-weight: 600;
+}
+
+.total {
+  font-size: 1.2rem;
+  text-align: right;
+  margin: 10px 0;
+}
+
+.summary-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.clear-btn {
+  background: #d9534f;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.clear-btn:hover {
+  background: #c9302c;
+}
+
+.close-btn:hover {
+  background: #0069d9;
+}
+
+.empty {
+  text-align: center;
+  color: #777;
+  margin-top: 20px;
+}
+
+/* Receipt modal */
+.receipt-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.receipt-content {
+  background: #fff;
+  padding: 22px;
+  border-radius: 10px;
+  width: 92%;
+  max-width: 560px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  text-align: left;
+}
+
+.receipt-content h3 {
+  margin-top: 0;
+}
+
+/* Receipt table small tweaks */
+.receipt-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 12px;
+}
+
+.receipt-table th,
+.receipt-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  font-size: 14px;
+}
+
+.receipt-table th {
+  background: #f7f7f7;
+  font-weight: 600;
+}
+
+.close-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background: #0069d9;
+}
+

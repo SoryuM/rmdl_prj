@@ -5,6 +5,7 @@ type Item = {
   item_cost: number;
   item_quantity: number;
   description?: string;
+  stock?: number;
 };
 type AppContextType = {
   items: Item[];
